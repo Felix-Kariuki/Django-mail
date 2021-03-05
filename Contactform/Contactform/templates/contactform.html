@@ -1,0 +1,26 @@
+  <!DOCTYPE html>
+  <html lang="en">
+      <head>
+          <title>CONTACT FORM</title>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link href="css/style.css" rel="stylesheet">
+      </head>
+      <body>
+
+        <center>
+            <h1>How to Create contact form send email in django</h1>
+            <h3>Flex Codes</h3>
+            <hr/>
+            <form method="POST">
+              {% csrf_token %}
+            <table border="1">
+                {{form}}
+                <input type="submit" value="Send">
+            </table>
+            </form>
+            
+        </center>
+      
+      </body>
+  </html>
